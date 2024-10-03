@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { ShoppingCart, Plus, Star, ArrowRight, Check, Menu, X } from "lucide-react"
+import { ShoppingCart, Plus, Star, Menu, X } from "lucide-react"
 
 export function ShipMatesLandingPage() {
   const [count, setCount] = useState(0)
@@ -94,7 +94,7 @@ export function ShipMatesLandingPage() {
             >
               <div>
                 <div className="bg-black text-white px-3 py-1 rounded-full text-sm inline-block mb-4">#1</div>
-                <h3 className="text-2xl font-bold mt-2">Collaborative Shopping Revolution: CartSplit's</h3>
+                <h3 className="text-2xl font-bold mt-2">Collaborative Shopping Revolution: CartSplit&apos;s</h3>
                 <p className="font-bold text-xl mt-2">Share & Save!</p>
               </div>
               <div className="mt-8">
@@ -167,7 +167,7 @@ export function ShipMatesLandingPage() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 my-20">
           <div className="md:w-1/2">
             <h2 className="text-4xl font-bold mb-6">Why Choose CartSplit?</h2>
-            <p className="text-xl mb-8">Experience the future of collaborative shopping with CartSplit's innovative platform.</p>
+            <p className="text-xl mb-8">Experience the future of collaborative shopping with CartSplit&apos;s innovative platform.</p>
             <div className="bg-white p-6 rounded-xl shadow-md">
               <div className="flex items-center justify-between">
                 <span className="text-6xl font-bold">4.9</span>
