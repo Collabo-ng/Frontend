@@ -1,5 +1,5 @@
-import { ShipMatesLandingPage } from "@/components/pre-launch/shipmates-landing-page"
+import { CollaboLandingPage } from "@/components/pre-launch/collabo-landing-page"
 
 export default function Page() {
-  return <ShipMatesLandingPage />
+  return <CollaboLandingPage />
 }

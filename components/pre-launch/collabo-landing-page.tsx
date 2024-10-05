@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ShoppingCart, Plus, Star, Menu, X } from "lucide-react"
 
-export function ShipMatesLandingPage() {
+export function CollaboLandingPage() {
   const [count, setCount] = useState(0)
   const [showPlus, setShowPlus] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -37,7 +37,7 @@ export function ShipMatesLandingPage() {
             </div>
             <div className="flex items-center justify-center flex-grow md:flex-grow-0 md:justify-start">
               <div className="bg-yellow-400 p-2 rounded-lg">
-                <span className="font-bold text-black">CartSplit</span>
+                <span className="font-bold text-black">Collabo</span>
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-6 flex-grow justify-end">
@@ -79,7 +79,7 @@ export function ShipMatesLandingPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-500 blur-xl"></div>
           <div className="relative bg-white bg-opacity-20 backdrop-blur-lg rounded-3xl p-12">
             <h1 className="text-4xl md:text-6xl font-black text-center leading-tight text-white">
-              SHIP TOGETHER, SAVE INDIVIDUALLY :<br />WITH CARTSPLIT
+              SHIP TOGETHER, SAVE INDIVIDUALLY :<br />WITH COLLABO
             </h1>
           </div>
         </div>
@@ -94,13 +94,13 @@ export function ShipMatesLandingPage() {
             >
               <div>
                 <div className="bg-black text-white px-3 py-1 rounded-full text-sm inline-block mb-4">#1</div>
-                <h3 className="text-2xl font-bold mt-2">Collaborative Shopping Revolution: CartSplit&apos;s</h3>
-                <p className="font-bold text-xl mt-2">Share & Save!</p>
+                <h3 className="text-2xl font-bold mt-2">Don&apos;t clear that cart because of the shipping fee: Collabo&apos;s</h3>
+                <p className="font-bold text-xl mt-2">  You shop and spend then ship and save </p>
               </div>
               <div className="mt-8">
                 <div className="flex items-center">
-                  <span className="text-4xl font-bold mr-2">Tap</span>
-                  <span className="text-4xl font-bold text-purple-500">Tap</span>
+                  <span className="text-4xl font-bold mr-2">Win</span>
+                  <span className="text-4xl font-bold text-purple-500">Win</span>
                 </div>
                 <div className="mt-4">
                   <span className="text-6xl">😊</span>
@@ -218,6 +218,16 @@ export function ShipMatesLandingPage() {
           </div>
         </section>
 
+        <section id="location" className="my-20 bg-white rounded-3xl p-10 shadow-lg">
+          <h2 className="text-3xl font-bold text-center mb-10">Our Planned locations</h2>
+
+        </section>
+
+        <section id="Support" className="my-20 bg-white rounded-3xl p-10 shadow-lg">
+          <h2 className="text-3xl font-bold text-center mb-10"> Want to be a beta tester? </h2>
+
+        </section>
+
         <section className="my-20 text-center">
           <h2 className="text-4xl font-bold mb-8">Ready to Start?</h2>
           <button className="bg-purple-500 text-white px-10 py-4 rounded-full text-xl font-bold hover:bg-purple-600 transition duration-300 shadow-lg">
@@ -230,7 +240,7 @@ export function ShipMatesLandingPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Cartsplit</h3>
+              <h3 className="text-xl font-bold mb-4">Collabo</h3>
               <p>Revolutionizing Community shopping.</p>
             </div>
             <div>
@@ -260,7 +270,7 @@ export function ShipMatesLandingPage() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-            <p>&copy; 2024 CartSplit. All rights reserved.</p>
+            <p>&copy; 2024 Collabo. All rights reserved.</p>
           </div>
         </div>
       </footer>
