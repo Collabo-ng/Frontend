@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Link from 'next/link'
 import { motion, AnimatePresence } from "framer-motion"
 import { ShoppingCart, Plus, Star, Menu, X } from "lucide-react"
 
@@ -44,9 +45,12 @@ export function CollaboLandingPage() {
               <a href="#" className="text-black hover:text-purple-700 transition duration-300">LOCATIONS</a>
               <a href="#" className="text-black hover:text-purple-700 transition duration-300">SUPPORT</a>
               <a href="#" className="text-black hover:text-purple-700 transition duration-300">ABOUT</a>
-              <a href="#how-it-works" className="text-black hover:text-purple-700 transition duration-300">HOW IT WORKS?</a>
+              <a href="/#how-it-works" className="text-black hover:text-purple-700 transition duration-300">HOW IT WORKS?</a>
+              <a href="/faq" className="text-black hover:text-purple-700 transition duration-300">FAQ</a>
               <button className="bg-purple-400 text-black px-4 py-2 rounded-full hover:bg-purple-500 transition duration-300">
-                SIGN UP
+                <Link href="/register">
+                Register
+                </Link>
               </button>
             </div>
           </div>
@@ -54,7 +58,7 @@ export function CollaboLandingPage() {
             {isMenuOpen && (
               <motion.div
                 initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "'auto'" }}
+                animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.3 }}
                 className="md:hidden mt-4"
@@ -64,9 +68,11 @@ export function CollaboLandingPage() {
                   <a href="#" className="text-black hover:text-purple-700 py-2 transition duration-300">SUPPORT</a>
                   <a href="#" className="text-black hover:text-purple-700 py-2 transition duration-300">ABOUT</a>
                   <a href="#how-it-works" className="text-black hover:text-purple-700 py-2 transition duration-300">HOW IT WORKS?</a>
+                  <Link href="/register">
                   <button className="bg-purple-400 text-black px-4 py-2 rounded-full hover:bg-purple-500 transition duration-300 w-full max-w-xs mt-4">
-                    SIGN UP
+                    Register
                   </button>
+                  </Link>
                 </div>
               </motion.div>
             )}
@@ -94,8 +100,9 @@ export function CollaboLandingPage() {
             >
               <div>
                 <div className="bg-black text-white px-3 py-1 rounded-full text-sm inline-block mb-4">#1</div>
-                <h3 className="text-2xl font-bold mt-2">Don&apos;t clear that cart because of the shipping fee: Collabo&apos;s</h3>
-                <p className="font-bold text-xl mt-2">  You shop and spend then ship and save </p>
+                <h3 className="text-2xl font-bold mt-2">Don&apos;t clear that cart because of the shipping fee: With Collabo </h3>
+                <p className="font-bold text-xl mt-2">  You shop and spend then ship and save <br/> Say goodbye to high Shipping fee </p>
+
               </div>
               <div className="mt-8">
                 <div className="flex items-center">
@@ -139,7 +146,7 @@ export function CollaboLandingPage() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  SIGN UP NOW
+                  REGISTER NOW
                 </motion.div>
               </div>
               <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2">
@@ -166,8 +173,8 @@ export function CollaboLandingPage() {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 my-20">
           <div className="md:w-1/2">
-            <h2 className="text-4xl font-bold mb-6">Why Choose CartSplit?</h2>
-            <p className="text-xl mb-8">Experience the future of collaborative shopping with CartSplit&apos;s innovative platform.</p>
+            <h2 className="text-4xl font-bold mb-6">Why Choose Collabo?</h2>
+            <p className="text-xl mb-8">With our group based approach to Shipping, shopping both in bulk and individually has never been cheaper</p>
             <div className="bg-white p-6 rounded-xl shadow-md">
               <div className="flex items-center justify-between">
                 <span className="text-6xl font-bold">4.9</span>
@@ -205,9 +212,9 @@ export function CollaboLandingPage() {
           <h2 className="text-3xl font-bold text-center mb-10">How It Works</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: "🎮", title: "Find Your Shopping Crew", description: "Add items to your cart, and CartSplit pairs you with others nearby who want to place an order on the same site." },
+              { icon: "🎮", title: "Find Your Shopping Crew", description: "Add items to your cart, and Collabo pairs you with others nearby who want to place an order on the same site." },
               { icon: "💰", title: "Split the Shipping", description: "We divide the shipping cost among everyone in the group, letting you pay less for delivery.The more people, the bigger the savings!" },
-              { icon: "🚀", title: "Save", description: "Confirm your group order, and CartSplit handles payments and updates. Enjoy fast, affordable shipping while saving big with your team!." },
+              { icon: "🚀", title: "Save", description: "Confirm your group order, and Collabo handles payments and updates. Enjoy fast, affordable shipping while saving big with your team!." },
             ].map((item, index) => (
               <div key={index} className="text-center">
                 <div className="text-5xl mb-4">{item.icon}</div>
@@ -219,7 +226,12 @@ export function CollaboLandingPage() {
         </section>
 
         <section id="location" className="my-20 bg-white rounded-3xl p-10 shadow-lg">
-          <h2 className="text-3xl font-bold text-center mb-10">Our Planned locations</h2>
+          <h2 className="text-3xl font-bold text-center mb-10">Delivery to your doorstep?</h2>
+
+        </section>
+
+        <section id="location" className="my-20 bg-white rounded-3xl p-10 shadow-lg">
+          <h2 className="text-3xl font-bold text-center mb-10">The catch?</h2>
 
         </section>
 
@@ -231,7 +243,7 @@ export function CollaboLandingPage() {
         <section className="my-20 text-center">
           <h2 className="text-4xl font-bold mb-8">Ready to Start?</h2>
           <button className="bg-purple-500 text-white px-10 py-4 rounded-full text-xl font-bold hover:bg-purple-600 transition duration-300 shadow-lg">
-            Join Cartsplit Now
+            Join Collabo Now
           </button>
         </section>
       </main>
