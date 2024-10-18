@@ -16,6 +16,13 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Collabo",
   description: "Collabo",
+  icons: [
+    {
+      rel: "icon",
+      href: "/favicon.ico",
+      url: "/favicon.ico",
+    }
+  ],
 };
 
 export default function RootLayout({
