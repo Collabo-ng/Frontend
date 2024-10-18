@@ -112,4 +112,3 @@ We recommend deploying your application on [Vercel](https://vercel.com/new) for 
 
 ---
 
-This version provides clear guidance on branch usage, commits, and collaboration, along with structured links and better readability for developers contributing to the project.

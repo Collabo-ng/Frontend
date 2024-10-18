@@ -21,3 +21,22 @@ html {
     --radius: 0.5rem;
   }
 }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@media (max-width: 640px) {
+  .text-4xl {
+    font-size: 2rem;
+  }
+}
